@@ -1,0 +1,18 @@
+@mixin mobile-view {
+    @media all and (min-width:701px) and (max-width:900px) {
+        @content; // refers to the set of declarations you are going to create for mobile-view of targeted element
+    }
+}
+@mixin ipad-view{
+	@media all and (min-width:901px) and (max-width: 1400px) {
+        @content; // refers to the set of declarations you are going to create for mobile-view of targeted element
+    }
+	
+}
+@mixin laptop-view{
+	
+
+	@media all and (min-width:1401px){
+	  @content; // refers to the set of declarations you are going to create for mobile-view of targeted element
+    }
+	}
